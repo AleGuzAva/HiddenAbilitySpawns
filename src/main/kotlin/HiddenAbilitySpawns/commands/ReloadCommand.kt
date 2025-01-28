@@ -36,7 +36,7 @@ object ReloadCommand {
      */
     private fun reloadConfigs(ctx: CommandContext<ServerCommandSource>): Int {
         try {
-            HiddenAbilitySpawns.reloadConfigurations() // Reload configurations
+            HiddenAbilitySpawns.reloadConfigurations()
             ctx.source.sendFeedback(
                 { net.minecraft.text.Text.literal("Hidden Ability Spawns configuration reloaded successfully.") },
                 false

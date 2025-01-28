@@ -19,7 +19,7 @@ class HiddenAbilitySpawns : ModInitializer {
 	private var server: MinecraftServer? = null
 
 	override fun onInitialize() {
-		// Display ASCII art
+		// Display ASCII art - no ascii this time :(
 		displayAsciiArt()
 
 		// Initialize configuration
@@ -119,7 +119,7 @@ class HiddenAbilitySpawns : ModInitializer {
 
 	private fun registerEventListeners() {
 		if (mainConfig != null && server != null) {
-			SpawnEvent(mainConfig!!)
+			SpawnEvent()
 		} else {
 			LOGGER.error("Failed to register events: mainConfig or server is null.")
 		}
