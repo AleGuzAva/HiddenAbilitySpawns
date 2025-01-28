@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "hiddenabilityspawns",
+	"version": "${version}",
+	"name": "HiddenAbilitySpawns",
+	"description": "Adds a percent chance for a Hidden Ability Pokemon to Spawn",
+	"authors": [
+		"Novoro"
+	],
+	"contact": {
+		"repo": ""
+	},
+	"license": "All Rights Reserved",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "HiddenAbilitySpawns.HiddenAbilitySpawns",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"hiddenabilityspawns.mixins.json"
+	],
+	"depends": {
+		"java": ">=21",
+		"minecraft": ">=1.21.0",
+		"fabric-api": "*",
+		"fabricloader": ">=0.14.21",
+		"luckperms": "*",
+		"fabric-language-kotlin": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
