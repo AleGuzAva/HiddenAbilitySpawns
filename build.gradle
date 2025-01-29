@@ -48,7 +48,7 @@ dependencies {
 	modImplementation include("net.kyori:adventure-platform-fabric:5.14.1")
 
 	// SnakeYAML dependency
-	implementation "org.yaml:snakeyaml:2.1"
+	implementation include(group: 'org.yaml', name: 'snakeyaml', version: '2.1')
 
 	modImplementation "me.lucko:fabric-permissions-api:0.3.1"
 	compileOnly "net.luckperms:api:5.4"
