@@ -82,12 +82,6 @@ class HiddenAbilitySpawns : ModInitializer {
 		return configFile
 	}
 
-	fun getConfigFolder(): File {
-		val configFolder = FabricLoader.getInstance().configDir.resolve("HiddenAbilitySpawns").toFile()
-		if (!configFolder.exists()) configFolder.mkdirs()
-		return configFolder
-	}
-
 	fun getConfig(fileName: String): Configuration? {
 		var config: Configuration? = null
 		try {
@@ -98,20 +92,8 @@ class HiddenAbilitySpawns : ModInitializer {
 		return config
 	}
 
-	fun saveConfig(file: File?, config: Configuration?) {
-		try {
-			if (config != null) {
-				if (file != null) {
-					YamlConfiguration.save(config, file)
-				}
-			}
-		} catch (e: IOException) {
-			e.printStackTrace()
-		}
-	}
-
 	/**
-	 * Displays an ASCII Art representation of the mod's name in the log.
+	 * Displays an ASCII Art representation of the mod's name in the log. -- didn't get to it :(
 	 */
 	private fun displayAsciiArt() {
 		LOGGER.info("HiddenAbilitySpawns Loaded Successfully")

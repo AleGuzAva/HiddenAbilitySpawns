@@ -1,5 +1,5 @@
 # DON'T TOUCH Config-Version OR THINGS WILL BREAK
-Config-Version: 1.0.0
+Config-Version: 1.0.2
 # Chance for Hidden Ability to Spawn. 100% is 1.00
 HiddenAbilityChance: 0.05
 
